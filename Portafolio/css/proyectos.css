@@ -1,0 +1,156 @@
+:root {
+    --color-back: #262b33;
+    --color-secundario: rgb(1, 255, 230);
+    --outer-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5), -3px -3px 3px rgba(0, 0, 0, 0.3);
+    --outer-shadow-0: 0px 0px 0px #d0d0d0, 0px 0px 0px #f8f8f8;
+    --inner-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.5), inset -3px -3px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Proyectos */
+
+  
+.contenedor__main{
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    margin: auto;
+    padding: 20px;
+}
+
+.contenedor-elements{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid white; */
+}
+
+.element{
+    
+    margin: 60px 10px;
+    width: 300px;
+    height: 300px;
+    box-shadow: var(--outer-shadow) ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+ 
+}
+
+.element__img{
+  
+  height: 80%;
+  width: 100%;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.element-1{
+    background-image: url(../img/Imagen1.png);
+
+}
+
+.element__descripcion h3{
+    color: rgb(219, 219, 219);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.element__descripcion p{
+    color: #ccc;
+    padding: 10px;
+}
+
+.element:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.contenedor__nav{
+    min-width: 100%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding-bottom: 20px ;
+    border-bottom: 2px solid gray;
+}
+
+
+/* //modal  */
+
+.modal-container{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    top: 0; 
+    left: 0;
+}
+
+.modal{
+    display: block;
+    width: 70%;
+    height: 800px;
+    border-radius: 10px;
+    position: relative;
+    background-color: rgb(39, 55, 77);
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+  
+    align-items: center;
+    /* background-color: white; */
+}
+
+.contenido h2{
+    color: white;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.close-modal{
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 0px 20px; 
+        border: none;
+        background-color: inherit;
+        cursor: pointer;
+      
+}
+
+.modal-imgs{
+    margin-top: 20px;
+    
+    height: 70%;
+    /* background-color: white; */
+}
+
+.data{
+    /* background-color: white; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 30%;
+    width: 70%;
+    padding: 30px;
+    color: white;
+}
+
+h3{
+    margin-top: 6px;
+}
+/* @media (max-width: 640px) {
+    
+
+} */

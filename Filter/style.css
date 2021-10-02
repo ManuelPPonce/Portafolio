@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    background-color: crimson;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px ;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.container{
+    filter: contrast(30);
+    background-color: #fff;
+}
+
+.caja{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: red;
+    margin: 40px;
+    border-radius: 50%;
+    filter: blur(20px);
+}
+
+.caja:first-child{
+    animation: trasladar 1.6s alternate infinite;
+}
+
+
+@keyframes trasladar{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(160px);
+    }
+}

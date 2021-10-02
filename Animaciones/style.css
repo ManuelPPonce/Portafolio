@@ -1,0 +1,47 @@
+*{
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+  
+    background: slateblue;
+    padding: 30px;
+ 
+}
+
+.caja{
+    background: #025;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: desplazarse 3s ;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.69, 1.35, 1,1.1)
+    
+}
+
+@keyframes desplazarse { 
+    from{
+        left: 0%;
+    }
+    50%{
+        background: red;
+       
+    }
+    54%{
+        width: 100px;
+    }
+    to{
+        left: 80%;
+        background: #fff;
+    }
+}

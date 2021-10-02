@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/proyectos.css">
+    <title>Projects </title>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="home"><a href="index.html"><i class="fas fa-home"></i></a></h1>
+        <div class="menu">
+            <div class="dropdown">
+
+                <i class="fas fa-bars"></i>
+                <div class="dropdown__content">
+                    <ul>
+                        <li><a href="index.html">Portfolio</a></li>
+                        <li><a href="../views/proyectos.html">Projects</a></li>
+                        <!-- <li><a href="">Contact</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+
+        <div class="contenedor__main">
+            <div class="contenedor__nav">
+                <h1>Proyectos</h1>
+            </div>
+            <div class="contenedor-elements">
+
+                <div class="element" onclick="element()"  value='1'>
+                    <div class="element__img element-1">
+                    </div>
+                    <div class="element__descripcion">
+                        <h3>SISEC</h3>
+                        <p>Sistema de encuentas desarrollado para el envio automatico de cuestionarios en la CFE
+                            Peninsular</p>
+                    </div>
+                   
+                </div>
+                <!-- <div class="element" onclick="element()">
+                    <div class="element__img">
+                    </div>
+                    <div class="element__descripcion">
+                        <h3>SISEC</h3>
+                        <p>Sistema de encuentas desarrollado para el envio automatico de cuestionarios</p>
+                    </div>
+                    <div class="modal">
+
+                    </div>
+                </div> -->
+            </div>
+            <div class="modal-container">
+                <div class="modal">
+                    <div class="contenido">
+                        <button class="close-modal" onclick="document.querySelector('.modal-container').style.display ='none'"> <h2>X</h2> </button>
+                        <h2>Sistema de Encuestas </h2>
+                        <div class="data">
+                            <h3>Empresa : <span>CFE Peninsular</span> </h3>
+                            <h3>Fecha : <span>03/06/2021</span> </h3>
+                            <h3>Nombre del Proyecto : <span>Sistema de encuestas(SISEC)</span> </h3>
+                            <h3>Desarrollador/es : <span>Manuel Pérez Ponce</span></h3>
+                            <h3>Tecnologias : <span>Laravel / PHP / AJAX / JavaScript / HTML / CSS / Bootstrap</span> </h3>
+                            
+                            
+                        </div>
+                        <div class="modal-imgs">
+                            <img src="../img/Imagen1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+
+    </main>
+    <script src="https://kit.fontawesome.com/29bba9f48e.js" crossorigin="anonymous"></script>
+    <script src="../js/modal.js"></script>
+</body>
+
+</html>
